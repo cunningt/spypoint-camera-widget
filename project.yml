@@ -1,0 +1,98 @@
+name: SpypointWidget
+options:
+  bundleIdPrefix: com.spypoint
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  SpypointWidget:
+    type: application
+    platform: macOS
+    sources:
+      - path: SpypointWidget
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spypoint.widget
+        PRODUCT_NAME: "SpyPoint"
+        INFOPLIST_KEY_CFBundleDisplayName: "SpyPoint"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.utilities"
+        CODE_SIGN_ENTITLEMENTS: SpypointWidget/SpypointWidget.entitlements
+        GENERATE_INFOPLIST_FILE: YES
+        ENABLE_HARDENED_RUNTIME: YES
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
+    entitlements:
+      path: SpypointWidget/SpypointWidget.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - 2VBGUP463F.group.com.spypoint.widget
+        com.apple.security.network.client: true
+    dependencies:
+      - target: SpypointWidgetExtension
+        embed: true
+        codeSign: true
+
+  SpypointWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: SpypointWidgetExtension
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared
+        excludes:
+          - KeychainHelper.swift
+          - "**/.DS_Store"
+    info:
+      path: SpypointWidgetExtension/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+        CFBundleDisplayName: SpyPoint
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.spypoint.widget.extension
+        CODE_SIGN_ENTITLEMENTS: SpypointWidgetExtension/SpypointWidgetExtension.entitlements
+        SKIP_INSTALL: YES
+        ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    entitlements:
+      path: SpypointWidgetExtension/SpypointWidgetExtension.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - 2VBGUP463F.group.com.spypoint.widget
+        com.apple.security.network.client: true
+
+schemes:
+  SpypointWidget:
+    build:
+      targets:
+        SpypointWidget: all
+        SpypointWidgetExtension: all
+    run:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

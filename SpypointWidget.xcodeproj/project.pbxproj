@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D115BA123862D3197BA21B4 /* SpypointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74453B09720963C0C2CB17C9 /* SpypointAPI.swift */; };
+		4B62369D49D13CDA955D6DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909AEABC18D6CCD1FC5E59CF /* Assets.xcassets */; };
+		4BE7CDD69D142A7E30F8FD18 /* SpypointWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92538087085BCD743701E940 /* SpypointWidgetApp.swift */; };
+		4CB1ABB219DC74BDAC855D66 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C4D2066F0532592B01FAA /* SettingsView.swift */; };
+		5172AF162E6CE9707E7F282A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38425724B978CD66F9B260D4 /* LoginView.swift */; };
+		559BB24601CA513891CD1075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBB20472BBEF34A88D0F2A2 /* Assets.xcassets */; };
+		7DF421FB52F9743855212478 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999723FE04E6B11B8533A7AC /* Models.swift */; };
+		97CE68988B5152EDDDD8C041 /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D613033AABEEBC23AED707 /* SharedDataManager.swift */; };
+		9E2C394D797DC1DF6FA76D08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3B8A3EEC507B635AB981A /* ContentView.swift */; };
+		A9E9FA9FDD63B7E91FE57B3D /* SharedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D613033AABEEBC23AED707 /* SharedDataManager.swift */; };
+		B1895D677AF0F2A65E99263D /* SpypointWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03ECBE65CD86AAFB7C62868 /* SpypointWidget.swift */; };
+		B6F21D7FCB24646007394805 /* SpypointWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F5404CEFA7C5561863604C92 /* SpypointWidgetExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6510F7596C86A9C2040BF2E /* SpypointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74453B09720963C0C2CB17C9 /* SpypointAPI.swift */; };
+		F349ED8A953BC296A4D238FA /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EE15F926A2DC5AF55EF67 /* KeychainHelper.swift */; };
+		FC6EA45D078A7D289DAEADB1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999723FE04E6B11B8533A7AC /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71EB6E45E6BAFFF5671F5DCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C5C051321BE7EBE30FFE2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65F3AABE9C7F580900590ADE;
+			remoteInfo = SpypointWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		32B03C317D29AEC370118C2B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B6F21D7FCB24646007394805 /* SpypointWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B9C4D2066F0532592B01FAA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		10C3B8A3EEC507B635AB981A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CBB20472BBEF34A88D0F2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F2770B1D0B7F8545DD03836 /* SpyPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38425724B978CD66F9B260D4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4D9EE15F926A2DC5AF55EF67 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		74453B09720963C0C2CB17C9 /* SpypointAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpypointAPI.swift; sourceTree = "<group>"; };
+		87D613033AABEEBC23AED707 /* SharedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataManager.swift; sourceTree = "<group>"; };
+		909AEABC18D6CCD1FC5E59CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92538087085BCD743701E940 /* SpypointWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpypointWidgetApp.swift; sourceTree = "<group>"; };
+		999723FE04E6B11B8533A7AC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A9D1CF3BFADA4C3E70074987 /* SpypointWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpypointWidgetExtension.entitlements; sourceTree = "<group>"; };
+		D81AB1414BBEAD370F6F218B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E6F30081E6C66F2E7E9977B7 /* SpypointWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpypointWidget.entitlements; sourceTree = "<group>"; };
+		F03ECBE65CD86AAFB7C62868 /* SpypointWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpypointWidget.swift; sourceTree = "<group>"; };
+		F5404CEFA7C5561863604C92 /* SpypointWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpypointWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		25441DC67233D3AB6F8630A3 /* SpypointWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				909AEABC18D6CCD1FC5E59CF /* Assets.xcassets */,
+				D81AB1414BBEAD370F6F218B /* Info.plist */,
+				F03ECBE65CD86AAFB7C62868 /* SpypointWidget.swift */,
+				A9D1CF3BFADA4C3E70074987 /* SpypointWidgetExtension.entitlements */,
+			);
+			path = SpypointWidgetExtension;
+			sourceTree = "<group>";
+		};
+		2F7B0DB41FF8BCD21512CC99 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				92538087085BCD743701E940 /* SpypointWidgetApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		38F9E56B390DA22567EB40EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60991C28B2FAC1FA3E3FD50E /* SpypointWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2CBB20472BBEF34A88D0F2A2 /* Assets.xcassets */,
+				E6F30081E6C66F2E7E9977B7 /* SpypointWidget.entitlements */,
+				2F7B0DB41FF8BCD21512CC99 /* App */,
+				38F9E56B390DA22567EB40EF /* Models */,
+				DDF140EE24A50B2FFCA9A1DF /* Services */,
+				B1CEA8A05B57EDDA28D36FF0 /* Views */,
+			);
+			path = SpypointWidget;
+			sourceTree = "<group>";
+		};
+		86D86AE2CC720AE2E4CD0053 = {
+			isa = PBXGroup;
+			children = (
+				8C428057DFF1879DAD4BFCB7 /* Shared */,
+				60991C28B2FAC1FA3E3FD50E /* SpypointWidget */,
+				25441DC67233D3AB6F8630A3 /* SpypointWidgetExtension */,
+				CDC44A5504CFF77F3939AB24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C428057DFF1879DAD4BFCB7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4D9EE15F926A2DC5AF55EF67 /* KeychainHelper.swift */,
+				999723FE04E6B11B8533A7AC /* Models.swift */,
+				87D613033AABEEBC23AED707 /* SharedDataManager.swift */,
+				74453B09720963C0C2CB17C9 /* SpypointAPI.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B1CEA8A05B57EDDA28D36FF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10C3B8A3EEC507B635AB981A /* ContentView.swift */,
+				38425724B978CD66F9B260D4 /* LoginView.swift */,
+				0B9C4D2066F0532592B01FAA /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDC44A5504CFF77F3939AB24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F2770B1D0B7F8545DD03836 /* SpyPoint.app */,
+				F5404CEFA7C5561863604C92 /* SpypointWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDF140EE24A50B2FFCA9A1DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5086BA25F7ECF63FBE73DCEF /* SpypointWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9965CA3D34E2FEAF7B6A276 /* Build configuration list for PBXNativeTarget "SpypointWidget" */;
+			buildPhases = (
+				BB42704047D31507FA6FA5E1 /* Sources */,
+				91BDE5A76718476DD6874262 /* Resources */,
+				32B03C317D29AEC370118C2B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA64F292E53A90B65D2B923 /* PBXTargetDependency */,
+			);
+			name = SpypointWidget;
+			packageProductDependencies = (
+			);
+			productName = SpypointWidget;
+			productReference = 2F2770B1D0B7F8545DD03836 /* SpyPoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65F3AABE9C7F580900590ADE /* SpypointWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9D62ABB4AE63D4F10137D6 /* Build configuration list for PBXNativeTarget "SpypointWidgetExtension" */;
+			buildPhases = (
+				07178E8CD75E56C00BA371BA /* Sources */,
+				886E29394CF9CEA98A5A1C89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpypointWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = SpypointWidgetExtension;
+			productReference = F5404CEFA7C5561863604C92 /* SpypointWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82C5C051321BE7EBE30FFE2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					5086BA25F7ECF63FBE73DCEF = {
+						ProvisioningStyle = Automatic;
+					};
+					65F3AABE9C7F580900590ADE = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E05B2FA515E3BDAC0A395396 /* Build configuration list for PBXProject "SpypointWidget" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 86D86AE2CC720AE2E4CD0053;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CDC44A5504CFF77F3939AB24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5086BA25F7ECF63FBE73DCEF /* SpypointWidget */,
+				65F3AABE9C7F580900590ADE /* SpypointWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		886E29394CF9CEA98A5A1C89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B62369D49D13CDA955D6DF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91BDE5A76718476DD6874262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BB24601CA513891CD1075 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07178E8CD75E56C00BA371BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC6EA45D078A7D289DAEADB1 /* Models.swift in Sources */,
+				97CE68988B5152EDDDD8C041 /* SharedDataManager.swift in Sources */,
+				E6510F7596C86A9C2040BF2E /* SpypointAPI.swift in Sources */,
+				B1895D677AF0F2A65E99263D /* SpypointWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB42704047D31507FA6FA5E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E2C394D797DC1DF6FA76D08 /* ContentView.swift in Sources */,
+				F349ED8A953BC296A4D238FA /* KeychainHelper.swift in Sources */,
+				5172AF162E6CE9707E7F282A /* LoginView.swift in Sources */,
+				7DF421FB52F9743855212478 /* Models.swift in Sources */,
+				4CB1ABB219DC74BDAC855D66 /* SettingsView.swift in Sources */,
+				A9E9FA9FDD63B7E91FE57B3D /* SharedDataManager.swift in Sources */,
+				2D115BA123862D3197BA21B4 /* SpypointAPI.swift in Sources */,
+				4BE7CDD69D142A7E30F8FD18 /* SpypointWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAA64F292E53A90B65D2B923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65F3AABE9C7F580900590ADE /* SpypointWidgetExtension */;
+			targetProxy = 71EB6E45E6BAFFF5671F5DCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35282F329D25A1C6E60299BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpypointWidget/SpypointWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SpyPoint;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spypoint.widget;
+				PRODUCT_NAME = SpyPoint;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		382FF97EBE4F8AE97694514D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2VBGUP463F;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5E0250568AAD1BBA64C14B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpypointWidgetExtension/SpypointWidgetExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = SpypointWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spypoint.widget.extension;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		674A412ED9A31E89CF993A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpypointWidgetExtension/SpypointWidgetExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = SpypointWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spypoint.widget.extension;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4979A74E02D388D9C188B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2VBGUP463F;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FC4597642EFFA815CE465569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpypointWidget/SpypointWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SpyPoint;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spypoint.widget;
+				PRODUCT_NAME = SpyPoint;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D9D62ABB4AE63D4F10137D6 /* Build configuration list for PBXNativeTarget "SpypointWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674A412ED9A31E89CF993A63 /* Debug */,
+				5E0250568AAD1BBA64C14B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E05B2FA515E3BDAC0A395396 /* Build configuration list for PBXProject "SpypointWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382FF97EBE4F8AE97694514D /* Debug */,
+				D4979A74E02D388D9C188B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F9965CA3D34E2FEAF7B6A276 /* Build configuration list for PBXNativeTarget "SpypointWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4597642EFFA815CE465569 /* Debug */,
+				35282F329D25A1C6E60299BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82C5C051321BE7EBE30FFE2A /* Project object */;
+}
